@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RetroTech Museum — Home</title>
+    <meta name="description" content="Discover the history of computing at the RetroTech Museum." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+    <link href="./libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./css/main.css" rel="stylesheet" />
+    <link href="./css/home.css" rel="stylesheet" />
+    <link rel="icon" href="./assets/images/icons/favicon.svg" />
+  </head>
+  <body data-page="home">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="./index.html">RetroTech</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="navLinks">
+              <li class="nav-item"><a class="nav-link" href="./index.html" data-link="home">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="./timeline.html" data-link="timeline">Timeline</a></li>
+              <li class="nav-item"><a class="nav-link" href="./gadget-explorer.html" data-link="explorer">Gadget Explorer</a></li>
+              <li class="nav-item"><a class="nav-link" href="./fun-zone.html" data-link="fun">Fun Zone</a></li>
+              <li class="nav-item"><a class="nav-link" href="./about.html" data-link="about">About</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="py-5 hero bg-gradient-dark text-light">
+        <div class="container">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-7">
+              <h1 class="display-4 fw-extrabold mb-3">Welcome to the RetroTech Museum</h1>
+              <p class="lead opacity-85">Explore iconic gadgets, trace the evolution of computing, and play with interactive exhibits.</p>
+              <div class="d-flex gap-3 mt-4">
+                <a class="btn btn-primary btn-lg" href="./gadget-explorer.html">Explore Gadgets</a>
+                <a class="btn btn-outline-light btn-lg" href="./timeline.html">View Timeline</a>
+              </div>
+            </div>
+            <div class="col-lg-5 text-center">
+              <div class="hero-device shadow-lg rounded-4 p-4 bg-dark-subtle text-dark">
+                <div class="crt-frame rounded-3">
+                  <div class="crt-screen d-flex align-items-center justify-content-center">
+                    <span class="mono">>_ hello, world_</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5">
+        <div class="container">
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h3 class="h5">Curated Timeline</h3>
+                  <p class="mb-3">Follow milestones from room-sized machines to pocket computers.</p>
+                  <a class="btn btn-sm btn-outline-primary" href="./timeline.html">Start the journey</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h3 class="h5">Gadget Explorer</h3>
+                  <p class="mb-3">Browse and filter classic hardware, consoles, and peripherals.</p>
+                  <a class="btn btn-sm btn-outline-primary" href="./gadget-explorer.html">Browse gadgets</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h3 class="h5">Fun Zone</h3>
+                  <p class="mb-3">Play mini-experiences inspired by retro tech interfaces.</p>
+                  <a class="btn btn-sm btn-outline-primary" href="./fun-zone.html">Have fun</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="py-4 border-top bg-body-tertiary">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <span class="text-muted">© <span id="year"></span> RetroTech Museum</span>
+        <a class="text-decoration-none" href="./about.html">About this project</a>
+      </div>
+    </footer>
+
+    <script src="./libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js" type="module"></script>
+    <script src="./js/home.js" type="module"></script>
+  </body>
+  </html>
+
+

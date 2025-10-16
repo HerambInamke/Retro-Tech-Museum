@@ -1,0 +1,9 @@
+[
+  { "year": 1946, "title": "ENIAC", "desc": "One of the earliest electronic general-purpose computers." },
+  { "year": 1977, "title": "Apple II", "desc": "Highly successful mass-produced microcomputer." },
+  { "year": 1981, "title": "IBM PC", "desc": "Established PC hardware and software standards." },
+  { "year": 1989, "title": "Game Boy", "desc": "Popularized handheld gaming." },
+  { "year": 2007, "title": "iPhone", "desc": "Redefined smartphones with multi-touch." }
+]
+
+

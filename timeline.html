@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RetroTech Museum — Timeline</title>
+    <meta name="description" content="Milestones in the history of computing." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+    <link href="./libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./css/main.css" rel="stylesheet" />
+    <link href="./css/timeline.css" rel="stylesheet" />
+    <link rel="icon" href="./assets/images/icons/favicon.svg" />
+  </head>
+  <body data-page="timeline">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="./index.html">RetroTech</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="navLinks">
+              <li class="nav-item"><a class="nav-link" href="./index.html" data-link="home">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="./timeline.html" data-link="timeline">Timeline</a></li>
+              <li class="nav-item"><a class="nav-link" href="./gadget-explorer.html" data-link="explorer">Gadget Explorer</a></li>
+              <li class="nav-item"><a class="nav-link" href="./fun-zone.html" data-link="fun">Fun Zone</a></li>
+              <li class="nav-item"><a class="nav-link" href="./about.html" data-link="about">About</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="py-5">
+      <div class="container">
+        <h1 class="mb-4">Computing Timeline</h1>
+        <p class="text-muted">Browse major milestones from early computation to modern devices.</p>
+
+        <div class="row g-4 align-items-end mb-4">
+          <div class="col-md-4">
+            <label for="yearFilter" class="form-label">Filter by year</label>
+            <input id="yearFilter" type="range" class="form-range" min="1940" max="2015" step="5" value="1980" />
+            <div class="d-flex justify-content-between small text-muted"><span>1940</span><span>2015+</span></div>
+          </div>
+          <div class="col-md-8 d-flex gap-2 justify-content-md-end">
+            <input id="searchInput" type="search" class="form-control" placeholder="Search events..." />
+            <button id="resetFilters" class="btn btn-outline-secondary">Reset</button>
+          </div>
+        </div>
+
+        <div id="timelineList" class="timeline grid"></div>
+      </div>
+    </main>
+
+    <footer class="py-4 border-top bg-body-tertiary">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <span class="text-muted">© <span id="year"></span> RetroTech Museum</span>
+        <a class="text-decoration-none" href="./about.html">About this project</a>
+      </div>
+    </footer>
+
+    <script src="./libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js" type="module"></script>
+    <script src="./js/timeline.js" type="module"></script>
+  </body>
+  </html>
+
+
