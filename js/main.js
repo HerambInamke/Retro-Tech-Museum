@@ -12,6 +12,15 @@ function setYear() {
 document.addEventListener('DOMContentLoaded', () => {
   setActiveNav();
   setYear();
+  const nav = document.querySelector('nav.navbar');
+  if (nav) {
+    const onScroll = () => {
+      if (window.scrollY > 6) nav.classList.add('is-scrolled');
+      else nav.classList.remove('is-scrolled');
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
 });
 
 
