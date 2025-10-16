@@ -1,0 +1,6 @@
+/* Dashboard layout and card styling */
+.avatar { box-shadow: inset 0 0 0 2px rgba(255,255,255,.1); }
+.list-group-flush .list-group-item { background-color: transparent; color: var(--rt-text); border-color: var(--rt-border); }
+.list-group-item small { color: var(--rt-text-muted); }
+
+
